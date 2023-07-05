@@ -1,9 +1,12 @@
 const express = require("express");
+const hbs = require("hbs");
 const app = express();
-const hbs = require("handlebars");
 const port = 8090;
 
+app.use(express.static("public"));
+
 app.set("view engine", "hbs");
+hbs.registerPartials(__dirname + "/views/partials");
 app.set("views", __dirname + "/views");
 
 //Ruta para ingresar por id
@@ -14,11 +17,10 @@ app.get("/animes/:id", (req, res) => {
   console.log(anime.id);
 });
 
-//CRUD
-//Create
-app.get("/animes/create", (req, res) => {
-  res.render("create");
+app.get("/", (req, res) => {
+  res.render("index");
 });
+//CRUD
 
 //Read
 app.get("/animes", (req, res) => {
