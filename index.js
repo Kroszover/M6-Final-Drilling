@@ -21,6 +21,11 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 //CRUD
+//JSON.PARSE -> STRINGyfy
+//Create
+app.get("/create", (req, res) => {
+  res.render("create");
+});
 
 //Read
 app.get("/animes", (req, res) => {

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Anime</title>
+</head>
+<body>
+    <h1>Crear Anime</h1>
+    <div class="container">
+        <form action="/insertarCliente" method="get">
+            <div class="mb-3">
+                <label for="jsonIdentificador" class="form-label">Identificador</label>
+                <input type="text" name="jsonIdentificador" class="form-control" id="jsonIdentificador">
+            </div>
+            <div class="mb-3">
+                <label for="jsonNombre" class="form-label">Nombre</label>
+                <input type="text" name="jsonNombre" class="form-control" id="jsonNombre">
+            </div>
+            <div class="mb-3">
+                <label for="jsonGenero" class="form-label">Genero</label>
+                <input type="text" name="jsonGenero" class="form-control" id="jsonGenero">
+            </div>
+            <div class="mb-3">
+                <label for="jsonAnio" class="form-label">Año</label>
+                <input type="text" name="jsonAnio" class="form-control" id="jsonAnio">
+            </div>
+            <div class="mb-3">
+                <label for="jsonAutor" class="form-label">Autor</label>
+                <input type="text" name="jsonAutor" class="form-control" id="jsonAutor">
+            </div>
+            <button type="submit" class="btn btn-primary">Crear nuevo anime</button>
+            <a href="/">Volver</a>
+        </form>
+    </div>
+</body>
+</html>
